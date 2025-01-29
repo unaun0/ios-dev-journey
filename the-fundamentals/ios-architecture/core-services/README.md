@@ -1,6 +1,9 @@
 # Core Services Layer
 
 Этот уровень предоставляет приложениям основные сервисы, не связанные напрямую с пользовательским интерфейсом, и зависит от технологий нижних уровней системы, таких как Core OS и Kernel and Device Drivers.
+![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe2wjp1il8ymdrtahspdp.png)
+
+Основные службы часто используют функциональность, предоставляемую Core OS, для реализации более сложных функций, характерных для конкретных приложений. Основные службы предоставляют приложениям необходимые сервисы, но не оказывают прямого влияния на пользовательский интерфейс приложения.
 
 ![](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/art/osx_architecture-core_services_2x.png)
 
