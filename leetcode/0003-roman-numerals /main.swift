@@ -47,28 +47,3 @@ class Solution {
         return num
     }
 }
-
-let solution = Solution()
-
-func runRomanTest(_ input: String, expected: Int) {
-    let result = solution.romanToInt(input)
-    let status = result == expected ? "✅ PASSED" : "❌ FAILED"
-    
-    print("""
-    \(status)
-    Input: "\(input)"
-    Expected: \(expected)
-    Result: \(result)
-    """)
-}
-
-runRomanTest("III", expected: 3)
-runRomanTest("IV", expected: 4)
-runRomanTest("IX", expected: 9)
-runRomanTest("LVIII", expected: 58)
-runRomanTest("MCMXCIV", expected: 1994)
-runRomanTest("CDXLIV", expected: 444)
-runRomanTest("MMMCMXCIX", expected: 3999)
-runRomanTest("I", expected: 1)
-runRomanTest("MMM", expected: 3000)
-runRomanTest("XLIX", expected: 49)

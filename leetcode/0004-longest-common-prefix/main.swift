@@ -17,36 +17,36 @@ class Solution {
     func longestCommonPrefix(_ strs: [String]) -> String {
         if strs.isEmpty { return "" }
         var pref = strs[0]
-
         for i in 1..<strs.count {
-            let currentStr = strs[i]
+            let t = strs[i]
             var j = 0
-            let minLength = min(pref.count, currentStr.count)
-            while j < minLength {
-                let prefIndex = pref.index(
-                    pref.startIndex, 
-                    offsetBy: j
-                )
-                let currentIndex = currentStr.index(
-                    currentStr.startIndex, 
-                    offsetBy: j
-                )
-                if pref[prefIndex] != currentStr[currentIndex] {
-                    break
-                }
-                j += 1
+            while j < min(pref.count, t.count) {
+                if t[
+                    t.index(
+                        t.startIndex, 
+                        offsetBy: j
+                    )
+                ] != pref[
+                    pref.index(
+                        pref.startIndex, 
+                        offsetBy: j
+                    )
+                ] { break }
+                j += 1;
             }
-            let endIndex = pref.index(pref.startIndex, offsetBy: j)
-            pref = String(pref[..<endIndex])
-            if pref.isEmpty {
-                return ""
-            }
+            pref = String(
+                pref[
+                    ..<pref.index(
+                        pref.startIndex, 
+                        offsetBy: j
+                    )
+                ]
+            )
         }
         return pref
     }
 }
 
 let solution = Solution()
-
-print(solution.longestCommonPrefix(["flower","flow","flight"]))
-print(solution.longestCommonPrefix(["dog","racecar","car"]))
+print(solution.longestCommonPrefix(["flower","flow","flight"])) // "fl"
+print(solution.longestCommonPrefix(["dog","racecar","car"])) // ""
