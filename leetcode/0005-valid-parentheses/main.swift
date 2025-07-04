@@ -28,13 +28,13 @@ class Solution {
             "}": "{"
         ]
         var stack = [Character]()
-        for char in s {
-            if let openBracket = bracketPairs[char] {
-                if stack.isEmpty || stack.removeLast() != openBracket {
+        for c in s {
+            if let temp = bracketPairs[c] {
+                if temp != stack.removeLast() {
                     return false
                 }
             } else {
-                stack.append(char)
+                stack.append(c)
             }
         }
         return stack.isEmpty
