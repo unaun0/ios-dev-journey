@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>📱 Тест: Глава 1. Отправная точка</h1>
-        <p class="subtitle">Swift. Основы вычислительного мышления, переменные, константы и типы данных</p>
+        <h1>Тест 1.1</h1>
+        <p class="subtitle">Глава 1. Отправная точка</p>
         
         <form id="quizForm">
             <!-- Вопрос 1 -->
@@ -23,89 +23,187 @@
 
             <!-- Вопрос 2 -->
             <div class="question">
-                <p><strong>2. Какое ключевое слово используется для объявления переменной в Swift?</strong></p>
-                <label><input type="radio" name="q2" value="0"> let</label><br>
-                <label><input type="radio" name="q2" value="0"> const</label><br>
-                <label><input type="radio" name="q2" value="1"> var</label><br>
-                <label><input type="radio" name="q2" value="0"> val</label>
+                <p><strong>2. Что такое алгоритм </strong></p>
+                <label><input type="radio" name="q2" value="0"> Тип данных в Swift</label><br>
+                <label><input type="radio" name="q2" value="1"> Набор инструкций для решения задачи</label><br>
+                <label><input type="radio" name="q2" value="0"> Переменная для хранения чисел</label><br>
+                <label><input type="radio" name="q2" value="0"> Способ вывода информации на экран</label>
             </div>
 
             <!-- Вопрос 3 -->
             <div class="question">
-                <p><strong>3. Что такое Value Type (тип-значение)?</strong></p>
-                <label><input type="radio" name="q3" value="0"> Тип, при котором при присваивании создается копия ссылки на объект</label><br>
-                <label><input type="radio" name="q3" value="1"> Тип, при котором при присваивании создается копия значения</label><br>
-                <label><input type="radio" name="q3" value="0"> Тип, который хранится только в куче (heap)</label><br>
-                <label><input type="radio" name="q3" value="0"> Тип, который не может быть изменен после инициализации</label>
+                <p><strong>3. Какой уровень является посредником между приложением "TikTok" и железом?</strong></p>
+                <label><input type="radio" name="q3" value="0"> Аппаратный уровень</label><br>
+                <label><input type="radio" name="q3" value="0"> Программный уровень</label><br>
+                <label><input type="radio" name="q3" value="1"> Уровень операционной системы</label><br>
+                <label><input type="radio" name="q3" value="0"> Уровень пользователя</label>
             </div>
-
+            
             <!-- Вопрос 4 -->
             <div class="question">
-                <p><strong>4. Какой тип является ссылочным (Reference Type)?</strong></p>
-                <label><input type="radio" name="q4" value="0"> Int</label><br>
-                <label><input type="radio" name="q4" value="0"> String</label><br>
-                <label><input type="radio" name="q4" value="0"> struct</label><br>
-                <label><input type="radio" name="q4" value="1"> class</label>
+                <p><strong>4. Для чего предназначена оперативная память (RAM)?</strong></p>
+                <label><input type="radio" name="q4" value="0"> Для долговременного хранения данных</label><br>
+                <label><input type="radio" name="q4" value="1"> Для временного хранения данных, используемых программами в ходе работы</label><br>
+                <label><input type="radio" name="q4" value="0"> Для выполнения арифметических операций</label><br>
+                <label><input type="radio" name="q4" value="0"> Для вывода информации на экран</label>
             </div>
 
             <!-- Вопрос 5 -->
             <div class="question">
-                <p><strong>5. Что произойдет в результате выполнения кода?</strong></p>
-                <pre>var a = 10
-var b = a
-b = 20
-print(a)</pre>
-                <label><input type="radio" name="q5" value="0"> 20</label><br>
-                <label><input type="radio" name="q5" value="1"> 10</label><br>
-                <label><input type="radio" name="q5" value="0"> Ошибка компиляции</label><br>
-                <label><input type="radio" name="q5" value="0"> 10 и 20</label>
+                <p><strong>5. Какое из перечисленных НЕ является свойством хранилища данных?</strong></p>
+                <label><input type="radio" name="q5" value="0"> Имя</label><br>
+                <label><input type="radio" name="q5" value="0"> Тип данных</label><br>
+                <label><input type="radio" name="q5" value="0"> Значение</label><br>
+                <label><input type="radio" name="q5" value="1"> Размер в байтах</label>
             </div>
 
             <!-- Вопрос 6 -->
             <div class="question">
-                <p><strong>6. Что такое глобальный объект?</strong></p>
-                <label><input type="radio" name="q6" value="0"> Объект, доступный только внутри родительского объекта</label><br>
-                <label><input type="radio" name="q6" value="1"> Объект, объявленный в корне программы и доступный в любой точке</label><br>
-                <label><input type="radio" name="q6" value="0"> Объект, который нельзя изменить после инициализации</label><br>
-                <label><input type="radio" name="q6" value="0"> Объект, объявленный с ключевым словом private</label>
+                <p><strong>6. Что такое инициализация?</strong></p>
+                <label><input type="radio" name="q6" value="0"> Создание нового объекта</label><br>
+                <label><input type="radio" name="q6" value="1"> Присвоение значения объекту</label><br>
+                <label><input type="radio" name="q6" value="0"> Удаление объекта из памяти</label><br>
+                <label><input type="radio" name="q6" value="0"> Вывод объекта на консоль</label>
             </div>
 
             <!-- Вопрос 7 -->
             <div class="question">
-                <p><strong>7. Какой синтаксис используется для однострочного комментария в Swift?</strong></p>
-                <label><input type="radio" name="q7" value="0"> &lt;!-- комментарий --&gt;</label><br>
-                <label><input type="radio" name="q7" value="0"> # комментарий</label><br>
-                <label><input type="radio" name="q7" value="1"> // комментарий</label><br>
-                <label><input type="radio" name="q7" value="0"> /* комментарий */</label>
+                <p><strong>7. Какой оператор работает с одним операндом?</strong></p>
+                <label><input type="radio" name="q7" value="0"> Бинарный</label><br>
+                <label><input type="radio" name="q7" value="0"> Инфиксный</label><br>
+                <label><input type="radio" name="q7" value="1"> Унарный</label><br>
+                <label><input type="radio" name="q7" value="0"> Тернарный</label>
             </div>
 
             <!-- Вопрос 8 -->
             <div class="question">
-                <p><strong>8. Требуется ли ставить точку с запятой в конце строки в Swift?</strong></p>
-                <label><input type="radio" name="q8" value="0"> Да, всегда</label><br>
-                <label><input type="radio" name="q8" value="0"> Нет, никогда</label><br>
-                <label><input type="radio" name="q8" value="1"> Не требуется, но нужна, если в одной строке несколько выражений</label><br>
-                <label><input type="radio" name="q8" value="0"> Только для переменных типа Int</label>
+                <p><strong>8. Какое ключевое слово используется для объявления переменной в Swift?</strong></p>
+                <label><input type="radio" name="q8" value="0"> let</label><br>
+                <label><input type="radio" name="q8" value="0"> const</label><br>
+                <label><input type="radio" name="q8" value="1"> var</label><br>
+                <label><input type="radio" name="q8" value="0"> val</label>
             </div>
 
             <!-- Вопрос 9 -->
             <div class="question">
-                <p><strong>9. Для чего используется функция print(_:)?</strong></p>
-                <label><input type="radio" name="q9" value="0"> Для объявления новой переменной</label><br>
-                <label><input type="radio" name="q9" value="1"> Для вывода текстовой информации в консоль</label><br>
-                <label><input type="radio" name="q9" value="0"> Для создания нового объекта</label><br>
-                <label><input type="radio" name="q9" value="0"> Для выполнения математических операций</label>
+                <p><strong>9. Какое ключевое слово используется для объявления константы в Swift?</strong></p>
+                <label><input type="radio" name="q9" value="0"> var</label><br>
+                <label><input type="radio" name="q9" value="1"> let</label><br>
+                <label><input type="radio" name="q9" value="0"> constant</label><br>
+                <label><input type="radio" name="q9" value="0"> const</label>
             </div>
 
             <!-- Вопрос 10 -->
             <div class="question">
-                <p><strong>10. Что будет выведено в консоль?</strong></p>
-                <pre>let name = "Alice"
-print("Hello, \(name)")</pre>
-                <label><input type="radio" name="q10" value="0"> Hello, \(name)</label><br>
-                <label><input type="radio" name="q10" value="0"> Hello, name</label><br>
-                <label><input type="radio" name="q10" value="1"> Hello, Alice</label><br>
-                <label><input type="radio" name="q10" value="0"> "Hello, Alice"</label>
+                <p><strong>10. Что произойдет при попытке выполнить этот код?</strong></p>
+                <pre>let pi = 3.14159; pi = 3.14</pre>
+                <label><input type="radio" name="q10" value="0"> Значение pi изменится на 3.14</label><br>
+                <label><input type="radio" name="q10" value="0"> Будет создана новая константа</label><br>
+                <label><input type="radio" name="q10" value="1"> Ошибка компиляции</label><br>
+                <label><input type="radio" name="q10" value="0"> Код выполнится с предупреждением</label>
+            </div>
+
+            <!-- Вопрос 11 -->
+            <div class="question">
+                <p><strong>11. Что будет выведено в консоль после выполнения кода?</strong></p>
+                <pre>var a = 10
+            var b = a
+            b = 20
+            print(a)</pre>
+                <label><input type="radio" name="q11" value="0"> 20</label><br>
+                <label><input type="radio" name="q11" value="1"> 10</label><br>
+                <label><input type="radio" name="q11" value="0"> 10 и 20</label><br>
+                <label><input type="radio" name="q11" value="0"> Ошибка компиляции</label>
+            </div>
+
+            <!-- Вопрос 12 -->
+            <div class="question">
+                <p><strong>12. Что такое Value Type (тип-значение)?</strong></p>
+                <label><input type="radio" name="q12" value="0"> Тип данных, для которого операция присваивания приводит к копированию ссылки на область памяти, где хранятся данные/label><br>
+                <label><input type="radio" name="q12" value="1"> Тип данных, экземпляры которого хранятся непосредственно в выделенной для переменной области памяти (чаще всего в стеке), и при присваивании копируется само значение, а не ссылка</label><br>
+                <label><input type="radio" name="q12" value="0"> Тип данных, который гарантирует неизменяемость своих экземпляров после инициализации</label><br>
+                <label><input type="radio" name="q12" value="0"> Тип данных, все экземпляры которого размещаются исключительно в динамической памяти (куче, heap)</label>
+            </div>
+
+            <!-- Вопрос 13 -->
+            <div class="question">
+                <p><strong>13. В какой строке перечислены ТОЛЬКО значимые типы (Value Types)?</strong></p>
+                <label><input type="radio" name="q13" value="0"> Int, String, class</label><br>
+                <label><input type="radio" name="q13" value="1"> Int, struct, Array</label><br>
+                <label><input type="radio" name="q13" value="0"> class, closure, actor, enum</label><br>
+                <label><input type="radio" name="q13" value="0"> struct, enum, actor</label>
+            </div>
+
+            <!-- Вопрос 14 -->
+            <div class="question">
+                <p><strong>14. В какой строке перечислены ТОЛЬКО ссылочные типы (Reference Types)?</strong></p>
+                <label><input type="radio" name="q14" value="0"> class, actor, closure, struct</label><br>
+                <label><input type="radio" name="q14" value="0"> class, actor, closure, Dictionary</label><br>
+                <label><input type="radio" name="q14" value="1"> class, actor, closure</label><br>
+                <label><input type="radio" name="q14" value="0"> class, actor, closure, enum</label>
+            </div>
+
+            <!-- Вопрос 15 -->
+            <div class="question">
+                <p><strong>15. Какое имя переменной соответствует стилю camelCase?</strong></p>
+                <label><input type="radio" name="q15" value="0"> user_name</label><br>
+                <label><input type="radio" name="q15" value="0"> UserName</label><br>
+                <label><input type="radio" name="q15" value="1"> userName</label><br>
+                <label><input type="radio" name="q15" value="0"> user-name</label>
+            </div>
+
+            <!-- Вопрос 16 -->
+            <div class="question">
+                <p><strong>16. Что такое глобальный объект?</strong></p>
+                <label><input type="radio" name="q16" value="0"> Объект, доступный только внутри родительского объекта</label><br>
+                <label><input type="radio" name="q16" value="1"> Объект, объявленный в корне программы и доступный в любой точке</label><br>
+                <label><input type="radio" name="q16" value="0"> Объект, который нельзя изменить</label><br>
+                <label><input type="radio" name="q16" value="0"> Объект, который удаляется после выполнения функции</label>
+            </div>
+
+            <!-- Вопрос 17 -->
+            <div class="question">
+                <p><strong>17. Можно ли создать два объекта с одинаковым именем в разных областях видимости?</strong></p>
+                <label><input type="radio" name="q17" value="0"> Нет, это всегда вызывает ошибку</label><br>
+                <label><input type="radio" name="q17" value="1"> Да, это допустимо</label><br>
+                <label><input type="radio" name="q17" value="0"> Да, но только если оба являются константами</label><br>
+                <label><input type="radio" name="q17" value="0"> Нет, имена должны быть уникальными во всей программе</label>
+            </div>
+
+            <!-- Вопрос 18 -->
+            <div class="question">
+                <p><strong>18. Какой синтаксис используется для однострочного комментария в Swift?</strong></p>
+                <label><input type="radio" name="q18" value="0"> &lt;!-- комментарий --&gt;</label><br>
+                <label><input type="radio" name="q18" value="0"> # комментарий</label><br>
+                <label><input type="radio" name="q18" value="1"> // комментарий</label><br>
+                <label><input type="radio" name="q18" value="0"> /* комментарий */</label>
+            </div>
+
+            <!-- Вопрос 19 -->
+            <div class="question">
+                <p><strong>19. Требуется ли ставить точку с запятой в конце строки в Swift?</strong></p>
+                <label><input type="radio" name="q19" value="0"> Да</label><br>
+                <label><input type="radio" name="q19" value="1"> Нет</label><br>
+                <label><input type="radio" name="q19" value="0"> Только для переменных типа String</label>
+            </div>
+
+            <!-- Вопрос 20 -->
+            <div class="question">
+                <p><strong>20. Что будет выведено в консоль после выполнения кода?</strong></p>
+                <pre>let name = "Alice"; print("Hello, \(name)")</pre>
+                <label><input type="radio" name="q20" value="0"> Hello, \(name)</label><br>
+                <label><input type="radio" name="q20" value="0"> Hello, name</label><br>
+                <label><input type="radio" name="q20" value="1"> Hello, Alice</label><br>
+                <label><input type="radio" name="q20" value="0"> "Hello, Alice"</label>
+            </div>
+
+            <!-- Вопрос 21 -->
+            <div class="question">
+                <p><strong>21. Что такое функция в программировании?</strong></p>
+                <label><input type="radio" name="q21" value="0"> Переменная для хранения чисел</label><br>
+                <label><input type="radio" name="q21" value="1"> Именованный фрагмент программного кода, к которому можно многократно обращаться</label><br>
+                <label><input type="radio" name="q21" value="0"> Тип данных для хранения текста</label><br>
+                <label><input type="radio" name="q21" value="0"> Оператор для сложения чисел</label>
             </div>
 
             <button type="button" class="btn" onclick="checkAnswers()">Проверить ответы</button>
