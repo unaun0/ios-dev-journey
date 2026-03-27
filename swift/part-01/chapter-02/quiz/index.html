@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Swift. Глава 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тест 1.2</h1>
+        <p class="subtitle">Глава 2. Фундаментальные типы данных</p>
+        
+        <form id="quizForm">
+            <!-- Вопрос 1 -->
+            <div class="question">
+                <p><strong>1. Что такое тип данных по определению из текста?</strong></p>
+                <label><input type="radio" name="q1" value="0"> Набор инструкций для решения задачи</label><br>
+                <label><input type="radio" name="q1" value="1"> Множество возможных значений и операций с этими значениями</label><br>
+                <label><input type="radio" name="q1" value="0"> Именованная область памяти</label><br>
+                <label><input type="radio" name="q1" value="0"> Способ вывода информации на экран</label>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="question">
+                <p><strong>2. Какие из перечисленных типов являются предустановленными в Swift?</strong></p>
+                <label><input type="radio" name="q2" value="1"> Int, String, Bool, Array</label><br>
+                <label><input type="radio" name="q2" value="0"> Int, String, UIView, Bool</label><br>
+                <label><input type="radio" name="q2" value="0"> Double, Float, UILabel, Dictionary</label><br>
+                <label><input type="radio" name="q2" value="0"> String, Data, URL, Array</label>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="question">
+                <p><strong>3. Что такое Swift Standard Library?</strong></p>
+                <label><input type="radio" name="q3" value="0"> Библиотека для доступа к системным API и работе с ОС</label><br>
+                <label><input type="radio" name="q3" value="1"> Набор базовых типов и функций, встроенных в язык Swift</label><br>
+                <label><input type="radio" name="q3" value="0"> Библиотека, подключаемая через 'import Foundation'</label><br>
+                <label><input type="radio" name="q3" value="0"> Фреймворк для создания пользовательского интерфейса</label>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="question">
+                <p><strong>4. Что произойдет в следующем коде?</strong></p>
+                <p><code>let text = "Hello"</code></p>
+                <label><input type="radio" name="q4" value="1"> Тип константы будет определен автоматически как String</label><br>
+                <label><input type="radio" name="q4" value="0"> Возникнет ошибка, так как тип не указан</label><br>
+                <label><input type="radio" name="q4" value="0"> Тип будет 'Any'</label>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="question">
+                <p><strong>5. Что произойдет при выполнении кода?</strong></p>
+                <p><code>var name: String = "Alex"<br>name = 10</code></p>
+                <label><input type="radio" name="q5" value="0"> Значение будет преобразовано в строку</label><br>
+                <label><input type="radio" name="q5" value="1"> Возникнет ошибка из-за несоответствия типа</label><br>
+                <label><input type="radio" name="q5" value="0"> Переменная изменит тип на Int</label><br>
+            </div>
+
+            <!-- Вопрос 6 -->
+            <div class="question">
+                <p><strong>6. Какое утверждение верно для типов данных в Swift?</strong></p>
+                <label><input type="radio" name="q6" value="0"> Тип переменной можно изменить после объявления</label><br>
+                <label><input type="radio" name="q6" value="1"> Тип переменной фиксируется при объявлении и не может изменяться</label><br>
+                <label><input type="radio" name="q6" value="0"> Тип указывается только для констант</label><br>
+                <label><input type="radio" name="q6" value="0"> Тип можно не указывать и не определять</label>
+            </div>
+
+            <!-- Вопрос 7 -->
+            <div class="question">
+                <p><strong>7. Что произойдет при выполнении кода?</strong></p>
+                <p><code>var str: String<br>print(str)</code></p>
+                <label><input type="radio" name="q7" value="0"> Будет выведена пустая строка</label><br>
+                <label><input type="radio" name="q7" value="0"> Swift автоматически присвоит значение по умолчанию</label><br>
+                <label><input type="radio" name="q7" value="0"> Значение будет nil</label><br>
+                <label><input type="radio" name="q7" value="1"> Возникнет ошибка, так как переменная не инициализирована</label>
+            </div>
+
+            <!-- Вопрос 8 -->
+            <div class="question">
+                <p><strong>8. Какой код выполнится без ошибки?</strong></p>
+                <label><input type="radio" name="q8" value="1"> var str: String; str = "Hi";print(str)</label><br>
+                <label><input type="radio" name="q8" value="0"> var str: String; print(str)</label><br>
+                <label><input type="radio" name="q8" value="0"> let str: String; str = "Hi"</label><br>
+                <label><input type="radio" name="q8" value="0"> var str; str = "Hi"</label>
+            </div>
+
+            <!-- Вопрос 9 -->
+            <div class="question">
+                <p><strong>9. Какое утверждение наиболее точно описывает целочисленные типы данных в Swift?</strong></p>
+                <label><input type="radio" name="q9" value="0"> Это типы, которые используются только для хранения положительных чисел</label><br>
+                <label><input type="radio" name="q9" value="1"> Это типы данных, предназначенные для хранения целых чисел без дробной части, которые делятся на знаковые и беззнаковые</label><br>
+                <label><input type="radio" name="q9" value="0"> Это типы данных, которые всегда автоматически преобразуются друг в друга при операциях</label><br>
+                <label><input type="radio" name="q9" value="0"> Это типы данных, используемые только для работы с текстом</label>
+            </div>
+
+            <!-- Вопрос 10 -->
+            <div class="question">
+                <p><strong>10. В чем ключевое отличие знаковых и беззнаковых целочисленных типов?</strong></p>
+                <label><input type="radio" name="q10" value="1"> Знаковые типы могут хранить отрицательные значения, а беззнаковые — только ноль и положительные</label><br>
+                <label><input type="radio" name="q10" value="0"> Беззнаковые типы могут хранить отрицательные значения, а знаковые — нет</label><br>
+                <label><input type="radio" name="q10" value="0"> Оба типа различаются только размером памяти</label><br>
+                <label><input type="radio" name="q10" value="0"> Знаковые типы используются только для дробных чисел</label>
+            </div>
+
+            <!-- Вопрос 11 -->
+            <div class="question">
+                <p><strong>11. Что такое числовой литерал в Swift?</strong></p>
+                <label><input type="radio" name="q11" value="0"> Переменная, хранящая числовое значение</label><br>
+                <label><input type="radio" name="q11" value="1"> Фиксированная запись числа в коде, которая может включать знак "+" или "-"</label><br>
+                <label><input type="radio" name="q11" value="0"> Функция для вычисления чисел во время выполнения</label><br>
+                <label><input type="radio" name="q11" value="0"> Тип данных для хранения целых чисел</label>
+            </div>
+
+            <!-- Вопрос 12 -->
+            <div class="question">
+                <p><strong>12. Почему Swift требует явного приведения типов при операциях между разными числовыми типами?</strong></p>
+                <label><input type="radio" name="q12" value="1"> Из-за строгой типизации, которая запрещает неявное преобразование между разными типами данных</label><br>
+                <label><input type="radio" name="q12" value="0"> Чтобы ускорить выполнение программы</label><br>
+                <label><input type="radio" name="q12" value="0"> Потому что все числовые типы автоматически являются строками</label><br>
+                <label><input type="radio" name="q12" value="0"> Чтобы ограничить использование чисел только целыми значениями</label>
+            </div>
+
+            <!-- Вопрос 13 -->
+            <div class="question">
+                <p><strong>13. Какие формулы правильно описывают диапазоны значений целочисленных типов в Swift?</strong></p>
+                <p>Выберите корректные формулы для знаковых и беззнаковых типов.</p>
+
+                <label><input type="radio" name="q13" value="0"> Знаковые: от 0 до 2ⁿ - 1; Беззнаковые: от -2ⁿ⁻¹ до 2ⁿ⁻¹ - 1</label><br>
+                <label><input type="radio" name="q13" value="1"> Знаковые: от -2ⁿ⁻¹ до 2ⁿ⁻¹ - 1; Беззнаковые: от 0 до 2ⁿ - 1</label><br>
+                <label><input type="radio" name="q13" value="0"> Знаковые: от -2ⁿ до 2ⁿ; Беззнаковые: от 0 до 2ⁿ⁻¹</label><br>
+                <label><input type="radio" name="q13" value="0"> Знаковые: от -2ⁿ⁻¹ до 2ⁿ⁻¹; Беззнаковые: от 1 до 2ⁿ</label>
+            </div>
+
+            <!-- Вопрос 14 -->
+            <div class="question">
+                <p><strong>14. Что произойдет, если результат операции выходит за пределы допустимого диапазона целочисленного типа?</strong></p>
+                <label><input type="radio" name="q14" value="1"> В большинстве случаев произойдет ошибка времени выполнения (runtime error)</label><br>
+                <label><input type="radio" name="q14" value="0"> Значение автоматически обрежется до допустимого диапазона</label><br>
+                <label><input type="radio" name="q14" value="0"> Тип переменной автоматически изменится на более широкий</label><br>
+                <label><input type="radio" name="q14" value="0"> Ошибка не возникает и результат всегда корректен</label>
+            </div>
+
+            <!-- Вопрос 15 -->
+            <div class="question">
+                <p><strong>15. Что в Swift понимается под объектом?</strong></p>
+                <label><input type="radio" name="q15" value="1"> Сущность, объединяющая данные (свойства) и поведение (методы)</label><br>
+                <label><input type="radio" name="q15" value="0"> Только переменная, хранящая значение</label><br>
+                <label><input type="radio" name="q15" value="0"> Только функция, выполняющая вычисления</label><br>
+                <label><input type="radio" name="q15" value="0"> Специальный тип данных для хранения чисел</label>
+            </div>
+
+            <!-- Вопрос 16 -->
+            <div class="question">
+                <p><strong>16. Что такое свойства объекта?</strong></p>
+                <label><input type="radio" name="q16" value="1"> Данные, описывающие состояние объекта</label><br>
+                <label><input type="radio" name="q16" value="0"> Функции, выполняющие действия</label><br>
+                <label><input type="radio" name="q16" value="0"> Переменные, не связанные с объектами</label><br>
+                <label><input type="radio" name="q16" value="0"> Операторы языка Swift</label>
+            </div>
+
+            <!-- Вопрос 17 -->
+            <div class="question">
+                <p><strong>17. Что такое методы объекта?</strong></p>
+                <label><input type="radio" name="q17" value="0"> Свойства объекта, хранящие данные</label><br>
+                <label><input type="radio" name="q17" value="0"> Типы данных для хранения чисел</label><br>
+                <label><input type="radio" name="q17" value="1"> Функции, определяющие поведение объекта и работающие в его контексте</label>
+            </div>
+
+            <!-- Вопрос 18 -->
+            <div class="question">
+                <p><strong>18. Как называется способ доступа к свойствам и методам объекта в Swift?</strong></p>
+                <label><input type="radio" name="q18" value="0"> Индексация</label><br>
+                <label><input type="radio" name="q18" value="1"> Точечная нотация</label><br>
+                <label><input type="radio" name="q18" value="0"> Декларация</label>
+            </div>
+
+            <!-- Вопрос 19 -->
+            <div class="question">
+                <p><strong>19. Что означает выражение ProductMachine.dispense("chocolate")?</strong></p>
+                <label><input type="radio" name="q19" value="0"> Создание нового объекта</label><br>
+                <label><input type="radio" name="q19" value="0"> Доступ к свойству объекта</label><br>
+                <label><input type="radio" name="q19" value="1"> Вызов метода объекта с передачей аргумента</label>
+            </div>
+
+            <!-- Вопрос 20 -->
+            <div class="question">
+                <p><strong>20. Что означает наличие свойств min и max у числовых типов в Swift?</strong></p>
+                <label><input type="radio" name="q20" value="1"> Возможность получить минимальное и максимальное значение, которое может хранить данный тип</label><br>
+                <label><input type="radio" name="q20" value="0"> Это пользовательские переменные, объявляемые вручную</label><br>
+                <label><input type="radio" name="q20" value="0"> Это методы для выполнения арифметических операций</label><br>
+                <label><input type="radio" name="q20" value="0"> Это типы данных для хранения строк</label>
+            </div>
+
+            <!-- Вопрос 21 -->
+            <div class="question">
+                <p><strong>21. Что такое числа с плавающей точкой?</strong></p>
+                <label><input type="radio" name="q21" value="1"> Числа, содержащие дробную часть и представляемые в памяти с помощью типов `Float` и `Double`</label><br>
+                <label><input type="radio" name="q21" value="0"> Только целые числа без дробной части</label><br>
+                <label><input type="radio" name="q21" value="0"> Числа, используемые только для индексов массивов</label><br>
+                <label><input type="radio" name="q21" value="0"> Текстовые значения, содержащие цифры</label>
+            </div>
+
+            <!-- Вопрос 22 -->
+            <div class="question">
+                <p><strong>22. Какие типы данных используются для хранения чисел с плавающей точкой в Swift?</strong></p>
+                <label><input type="radio" name="q22" value="0"> Bool и Float</label><br>
+                <label><input type="radio" name="q22" value="0"> Int и UInt</label><br>
+                <label><input type="radio" name="q22" value="0"> String и Character</label><br>
+                <label><input type="radio" name="q22" value="1"> Float и Double</label>
+            </div>
+
+            <!-- Вопрос 23 -->
+            <div class="question">
+                <p><strong>23. В чем основное различие между Float и Double?</strong></p>
+                <label><input type="radio" name="q23" value="1"> Float — 32-битный тип с меньшей точностью, Double — 64-битный тип с большей точностью</label><br>
+                <label><input type="radio" name="q23" value="0"> Float хранит только целые числа, Double — дробные</label><br>
+                <label><input type="radio" name="q23" value="0"> Float всегда точнее Double</label><br>
+                <label><input type="radio" name="q23" value="0"> Double используется только для отрицательных чисел</label>
+            </div>
+
+            <!-- Вопрос 24 -->
+            <div class="question">
+                <p><strong>24. Сколько примерно знаков в дробной части может хранить тип Float?</strong></p>
+                <label><input type="radio" name="q24" value="0"> До 2 знаков</label><br>
+                <label><input type="radio" name="q24" value="1"> До 6 знаков</label><br>
+                <label><input type="radio" name="q24" value="0"> До 10 знаков</label><br>
+                <label><input type="radio" name="q24" value="0"> До 15 знаков</label>
+            </div>
+
+            <!-- Вопрос 25 -->
+            <div class="question">
+                <p><strong>25. Сколько примерно знаков в дробной части может хранить тип Double?</strong></p>
+                <label><input type="radio" name="q25" value="0"> До 6 знаков</label><br>
+                <label><input type="radio" name="q25" value="0"> До 12 знаков</label><br>
+                <label><input type="radio" name="q25" value="1"> До 15 знаков</label><br>
+                <label><input type="radio" name="q25" value="0"> До 16 знаков</label>
+            </div>
+
+            <!-- Вопрос 26 -->
+            <div class="question">
+                <p><strong>26. Какой тип данных Swift выберет по умолчанию для дробного литерала?</strong></p>
+                <label><input type="radio" name="q26" value="0"> Float</label><br>
+                <label><input type="radio" name="q26" value="0"> Int</label><br>
+                <label><input type="radio" name="q26" value="1"> Double</label>
+            </div>
+
+            <!-- Вопрос 27 -->
+            <div class="question">
+                <p><strong>27. Какое утверждение наиболее точно описывает правила выполнения арифметических операций в Swift?</strong></p>
+                <label><input type="radio" name="q27" value="1"> Арифметические операции выполняются только между значениями одного типа, а тип результата совпадает с типом операндов</label><br>
+                <label><input type="radio" name="q27" value="0"> Арифметические операции автоматически приводят типы к наиболее подходящему</label><br>
+                <label><input type="radio" name="q27" value="0"> Операции можно выполнять между любыми типами без ограничений</label><br>
+                <label><input type="radio" name="q27" value="0"> Тип результата всегда преобразуется в Double</label>
+            </div>
+
+            <!-- Вопрос 28 -->
+            <div class="question">
+                <p><strong>28. Какое значение содержит переменная `result`?</strong></p>
+                <p><code>let a = 10; let b = 4; let result = a / b</code></p>
+                <label><input type="radio" name="q28" value="0"> 2.5</label><br>
+                <label><input type="radio" name="q28" value="0"> 2.0</label><br>
+                <label><input type="radio" name="q28" value="1"> 2</label><br>
+                <label><input type="radio" name="q28" value="0"> Ошибка выполнения</label>
+            </div>
+
+            <!-- Вопрос 29 -->
+            <div class="question">
+                <p><strong>29. Какой результат вернёт выражение?</strong></p>
+                <p><code>let result = 17 % 5</code></p>
+                <label><input type="radio" name="q29" value="1"> 2</label><br>
+                <label><input type="radio" name="q29" value="0"> 3</label><br>
+                <label><input type="radio" name="q29" value="0"> 5</label><br>
+                <label><input type="radio" name="q29" value="0"> 0</label>
+            </div>
+
+            <!-- Вопрос 30 -->
+            <div class="question">
+                <p><strong>30. Как получить остаток от деления для чисел типа Float или Double?</strong></p>
+                <label><input type="radio" name="q30" value="0"> С помощью метода remainder(dividingBy:)</label><br>
+                <label><input type="radio" name="q30" value="0"> С помощью оператора %</label><br>
+                <label><input type="radio" name="q30" value="1"> С помощью метода truncatingRemainder(dividingBy:)</label><br>
+                <label><input type="radio" name="q30" value="0"> Остаток для Float и Double получить нельзя</label>
+            </div>
+
+            <!-- Вопрос 31 -->
+            <div class="question">
+                <p><strong>31. Что делает метод isMultiple(of:)?</strong></p>
+                <label><input type="radio" name="q31" value="1"> Проверяет, является ли число кратным указанному значению</label><br>
+                <label><input type="radio" name="q31" value="0"> Находит остаток от деления</label><br>
+                <label><input type="radio" name="q31" value="0"> Делит число и округляет результат</label><br>
+                <label><input type="radio" name="q31" value="0"> Проверяет, является ли число положительным</label>
+            </div>
+
+            <!-- Вопрос 32 -->
+            <div class="question">
+                <p><strong>32. Что произойдёт при выполнении кода?</strong></p>
+                <p><code>let a = 10; let b = 3.5; let result = a + b</code></p>
+                <label><input type="radio" name="q32" value="1"> Ошибка компиляции из-за разных типов данных</label><br>
+                <label><input type="radio" name="q32" value="0"> Результат будет автоматически приведён к Double</label><br>
+                <label><input type="radio" name="q32" value="0"> Результат будет приведён к Int</label><br>
+                <label><input type="radio" name="q32" value="0"> Код выполнится без ошибок и вернёт Int</label>
+            </div>
+
+            <!-- Вопрос 33 -->
+            <div class="question">
+                <p><strong>33. Какой результат будет у следующего кода?</strong></p>
+                <p><code>let a = 3; let b = 3.13; let result = a * Int(b)</code></p>
+                <label><input type="radio" name="q33" value="0"> 10</label><br>
+                <label><input type="radio" name="q33" value="0"> 9.39</label><br>
+                <label><input type="radio" name="q33" value="1"> 9</label><br>
+                <label><input type="radio" name="q33" value="0"> Ошибка компиляции</label>
+            </div>
+
+            <!-- Вопрос 34 -->
+            <div class="question">
+                <p><strong>34. Какой тип данных рекомендуется использовать для финансовых расчётов??</strong></p>
+                <label><input type="radio" name="q34" value="0"> Double</label><br>
+                <label><input type="radio" name="q34" value="0"> Float</label><br>
+                <label><input type="radio" name="q34" value="0"> Int</label><br>
+                <label><input type="radio" name="q34" value="1"> Decimal</label>
+            </div>
+
+            <!-- Вопрос 35 -->
+            <div class="question">
+                <p><strong>35. Что такое Foundation в Swift?</strong></p>
+                <label><input type="radio" name="q35" value="1"> Базовый фреймворк, предоставляющий дополнительные типы данных и инструменты</label><br>
+                <label><input type="radio" name="q35" value="0"> Часть стандартной библиотеки Swift, отвечающая только за арифметические операции</label><br>
+                <label><input type="radio" name="q35" value="0"> Встроенный модуль для управления памятью</label><br>
+                <label><input type="radio" name="q35" value="0"> Компилятор языка Swift</label>
+            </div>
+
+            <!-- Вопрос 36 -->
+            <div class="question">
+                <p><strong>36. Что такое строковый тип данных?</strong></p>
+                <label><input type="radio" name="q36" value="1"> Тип данных для хранения и работы с текстом</label><br>
+                <label><input type="radio" name="q36" value="0"> Тип данных для хранения и работы с файлами</label>
+            </div>
+
+            <!-- Вопрос 37 -->
+            <div class="question">
+                <p><strong>37. Какой тип данных в Swift используется для хранения одного символа?</strong></p>
+                <label><input type="radio" name="q37" value="0"> Char</label><br>
+                <label><input type="radio" name="q37" value="0"> String</label><br>
+                <label><input type="radio" name="q37" value="0"> Int</label><br>
+                <label><input type="radio" name="q37" value="1"> Character</label>
+            </div>
+
+            <!-- Вопрос 38 -->
+            <div class="question">
+                <p><strong>38. Что будет результатом выражения: `true && false || true` ?</strong></p>
+                <label><input type="radio" name="q38" value="0"> false</label><br>
+                <label><input type="radio" name="q38" value="1"> true</label><br>
+                <label><input type="radio" name="q38" value="0"> Ошибка компиляции</label><br>
+                <label><input type="radio" name="q38" value="0"> nil</label>
+            </div>
+
+            <!-- Вопрос 39 -->
+            <div class="question">
+                <p><strong>39. Какой результат выражения: `(false || true) && false` ?</strong></p>
+                <label><input type="radio" name="q39" value="0"> true</label><br>
+                <label><input type="radio" name="q39" value="0"> Ошибка выполнения</label><br>
+                <label><input type="radio" name="q39" value="1"> false</label><br>
+                <label><input type="radio" name="q39" value="0"> nil</label>
+            </div>
+
+            <!-- Вопрос 40 -->
+            <div class="question">
+                <p><strong>40. Чему будет равно выражение: `!(true && false) || (false && true)` ?</strong></p>
+                <label><input type="radio" name="q40" value="0"> false</label><br>
+                <label><input type="radio" name="q40" value="0"> Ошибка компиляции</label><br>
+                <label><input type="radio" name="q40" value="1"> true</label><br>
+                <label><input type="radio" name="q40" value="0"> nil</label>
+            </div>
+
+            <!-- Вопрос 41 -->
+            <div class="question">
+                <p><strong>41. Что вернет выражение: `(5 > 3) && (2 == 2) && (10 < 1)` ?</strong></p>
+                <label><input type="radio" name="q41" value="0"> true</label><br>
+                <label><input type="radio" name="q41" value="1"> false</label><br>
+                <label><input type="radio" name="q41" value="0"> Ошибка выполнения</label><br>
+                <label><input type="radio" name="q41" value="0"> nil</label>
+            </div>
+
+            <!-- Вопрос 42 -->
+            <div class="question">
+                <p><strong>42. Что произойдет при использовании typealias для типа String?</strong></p>
+                <label><input type="radio" name="q42" value="0"> Создаётся новый независимый тип</label><br>
+                <label><input type="radio" name="q42" value="1"> Создаётся альтернативное имя для существующего типа String</label><br>
+                <label><input type="radio" name="q42" value="0"> String преобразуется в другой тип данных</label><br>
+                <label><input type="radio" name="q42" value="0"> typealias запрещает использование методов String</label>
+            </div>
+
+            <!-- Вопрос 43 -->
+            <div class="question">
+                <p><strong>43. Какой результат будет у следующего кода?</strong><br>
+                <code>typealias A = Int; typealias B = Int; let x: A = 10; let y: B = 20; let z = x + y</code></p>
+                <label><input type="radio" name="q43" value="1"> 30</label><br>
+                <label><input type="radio" name="q43" value="0"> Ошибка компиляции из-за разных типов</label><br>
+                <label><input type="radio" name="q43" value="0"> nil</label><br>
+                <label><input type="radio" name="q43" value="0"> 1020</label>
+            </div>
+
+            <!-- Вопрос 44 -->
+            <div class="question">
+                <p><strong>44. Что вернет следующий код?</strong><br>
+                <code>typealias MyInt = Int; let a: MyInt = 5; let b: Int = 10; let result = a + b</code></p>
+                <label><input type="radio" name="q44" value="1"> 15</label><br>
+                <label><input type="radio" name="q44" value="0"> Ошибка компиляции</label><br>
+                <label><input type="radio" name="q44" value="0"> nil</label><br>
+                <label><input type="radio" name="q44" value="0"> 510</label>
+            </div>
+
+            <!-- Вопрос 45 -->
+            <div class="question">
+                <p><strong>45. Можно ли использовать typealias для кортежей?</strong></p>
+                <label><input type="radio" name="q45" value="1"> Да</label><br>
+                <label><input type="radio" name="q45" value="0"> Нет</label>
+            </div>
+
+            <!-- Вопрос 46 -->
+            <div class="question">
+                <p><strong>46. Что произойдет при попытке сравнить значения разных typealias одного базового типа?</strong></p>
+                <label><input type="radio" name="q46" value="1"> Сравнение будет корректным, так как это один и тот же тип</label><br>
+                <label><input type="radio" name="q46" value="0"> Будет ошибка компиляции из-за разных типов</label><br>
+                <label><input type="radio" name="q46" value="0"> Сравнение всегда вернет false</label><br>
+                <label><input type="radio" name="q46" value="0"> typealias блокирует операции сравнения</label>
+            </div>
+
+            <!-- Вопрос 47 -->
+            <div class="question">
+                <p><strong>47. Что выведет следующий код?</strong><br>
+                <code>let value = 10; print(type(of: value))</code></p>
+                <label><input type="radio" name="q47" value="0"> Double</label><br>
+                <label><input type="radio" name="q47" value="1"> Int</label><br>
+                <label><input type="radio" name="q47" value="0"> type Int.Type</label><br>
+                <label><input type="radio" name="q47" value="0"> Ошибка компиляции</label>
+            </div>
+
+            <!-- Вопрос 48 -->
+            <div class="question">
+                <p><strong>48. Чем является функция type(of:)?</strong></p>
+                <label><input type="radio" name="q48" value="0"> Оператор</label><br>
+                <label><input type="radio" name="q48" value="1"> Функция, возвращающая тип значения</label><br>
+                <label><input type="radio" name="q48" value="0"> Метод класса</label><br>
+                <label><input type="radio" name="q48" value="0"> Протокол</label>
+            </div>
+
+            <!-- Вопрос 48 -->
+            <div class="question">
+                <p><strong>48. В чем принципиальное различие между Comparable и Equatable в Swift и какие операторы относятся к каждой из этих категорий?</strong></p>
+
+                <label><input type="radio" name="q48" value="1"> Comparable определяет порядок (&lt;, &gt;, &lt;=, &gt;=), а Equatable — равенство (==, !=)</label><br>
+                <label><input type="radio" name="q48" value="0"> Comparable и Equatable используют одни и те же операторы</label><br>
+                <label><input type="radio" name="q48" value="0"> Equatable определяет порядок, а Comparable — равенство</label><br>
+                <label><input type="radio" name="q48" value="0"> Оба протокола отвечают только за хеширование</label>
+            </div>
+
+            <!-- Вопрос 49 -->
+            <div class="question">
+                <p><strong>49. Какой тип будет у переменной?</strong><br>
+                <code>let x = 3.14</code></p>
+                <label><input type="radio" name="q49" value="0"> Int</label><br>
+                <label><input type="radio" name="q49" value="1"> Double</label><br>
+                <label><input type="radio" name="q49" value="0"> Float</label><br>
+                <label><input type="radio" name="q49" value="0"> Any</label>
+            </div>
+
+            <!-- Вопрос 50 -->
+            <div class="question">
+                <p><strong>50. Какой тип будет у строки?</strong><br>
+                <code>let x = "Hello"</code></p>
+                <label><input type="radio" name="q50" value="0"> Any</label><br>
+                <label><input type="radio" name="q50" value="1"> String</label><br>
+                <label><input type="radio" name="q50" value="0"> Character</label><br>
+                <label><input type="radio" name="q50" value="0"> NSString</label>
+            </div>
+
+            <!-- Вопрос 51 -->
+            <div class="question">
+                <p><strong>51. Что характеризует протокол Comparable?</strong></p>
+                <label><input type="radio" name="q51" value="0"> Поддержку только ==</label><br>
+                <label><input type="radio" name="q51" value="1"> Возможность сравнения через &lt;, &gt;</label><br>
+                <label><input type="radio" name="q51" value="0"> Используется только для строк</label><br>
+                <label><input type="radio" name="q51" value="0"> Требует Hashable</label>
+            </div>
+
+            <!-- Вопрос 52 -->
+            <div class="question">
+                <p><strong>52. Почему Bool не является Comparable?</strong></p>
+                <label><input type="radio" name="q52" value="0"> Потому что он не поддерживает операции</label><br>
+                <label><input type="radio" name="q52" value="1"> Потому что невозможно определить порядок значений</label><br>
+                <label><input type="radio" name="q52" value="0"> Потому что он не Equatable</label><br>
+                <label><input type="radio" name="q52" value="0"> Потому что это строковый тип</label>
+            </div>
+
+            <!-- Вопрос 53 -->
+            <div class="question">
+                <p><strong>53. Что произойдет при выполнении?</strong><br>
+                <code>true &lt; false</code></p>
+                <label><input type="radio" name="q53" value="0"> true</label><br>
+                <label><input type="radio" name="q53" value="0"> false</label><br>
+                <label><input type="radio" name="q53" value="1"> Ошибка компиляции</label><br>
+                <label><input type="radio" name="q53" value="0"> nil</label>
+            </div>
+
+            <!-- Вопрос 54 -->
+            <div class="question">
+                <p><strong>54. Что верно про Hashable?</strong></p>
+                <label><input type="radio" name="q54" value="0"> Позволяет сравнение через &lt;</label><br>
+                <label><input type="radio" name="q54" value="1"> Позволяет вычислить хеш значения</label><br>
+                <label><input type="radio" name="q54" value="0"> Используется только для чисел</label><br>
+                <label><input type="radio" name="q54" value="0"> Заменяет Comparable</label>
+            </div>
+
+            <!-- Вопрос 55 -->
+            <div class="question">
+                <p><strong>55. Почему значение `hash` может отличаться при каждом запуске?</strong></p>
+                <label><input type="radio" name="q55" value="0"> Потому что данные изменяются</label><br>
+                <label><input type="radio" name="q55" value="1"> Из-за рандомизации хеш-функции</label><br>
+                <label><input type="radio" name="q55" value="0"> Потому что hash всегда случайный</label>
+            </div>
+
+            <!-- Вопрос 56 -->
+            <div class="question">
+                <p><strong>56. Какое утверждение верно?</strong></p>
+                <label><input type="radio" name="q56" value="0"> Все Comparable типы обязательно Hashable</label><br>
+                <label><input type="radio" name="q56" value="0"> Все Hashable типы обязательно Comparable</label><br>
+                <label><input type="radio" name="q56" value="1"> Hashable и Comparable — независимые категории</label>
+            </div>
+
+            <button type="button" class="btn" onclick="checkAnswers()">Проверить ответы</button>
+            <button type="reset" class="btn reset" onclick="clearResult()">Сбросить</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
